@@ -1,0 +1,13 @@
+//ARSH KAMAL
+//10279 1D
+#include <stdio.h> 
+int main() { 
+    int n = 12321, temp = n, rev = 0; 
+    while(temp != 0) { 
+        rev = rev * 10 + (temp % 10); 
+        temp /= 10; 
+    } 
+    if(n == rev) printf("Palindrome"); 
+    else printf("Not Palindrome"); 
+    return 0; 
+}
